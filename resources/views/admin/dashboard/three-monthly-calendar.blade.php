@@ -57,7 +57,7 @@
                                     @foreach ($firstMonthDates as $item)
                                         @if(isset($dateEvents[$item->date]))
                                             @foreach ($dateEvents[$item->date] as $val)
-                                                <tr class="bg-blue-200 border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top">
+                                                <tr class="border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top" style="background: {!!$val->color_code!!};">
                                                     <td class="px-3 py-4">
                                                         {{$item->format_date}}
                                                     </td>
