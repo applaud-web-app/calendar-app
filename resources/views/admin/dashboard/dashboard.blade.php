@@ -52,7 +52,7 @@
         @endif
         @empty
             <div class="w-full mb-3 ">
-                <h2 class="text-center">NO DATA</h2>
+                <h3 class="text-center">NO DATA</h3>
             </div>
         @endforelse
        

@@ -31,7 +31,7 @@
     <nav class="border-gray-200 bg-[#091734] px-2.5 py-2.5 shadow-sm dark:bg-slate-800 sm:px-4 block print:hidden">
       <div class="container mx-0 flex flex-wrap items-center lg:mx-auto">
         <div class="flex items-center">
-          <a href="#" class="flex items-center outline-none">
+          <a href="{{url('/')}}" class="flex items-center outline-none">
 
             <img src="{{asset('assets/images/logo.png')}}" alt="" class="ml-2 block h-12 md:h-20  w-auto" />
           </a>
@@ -68,8 +68,11 @@
                   </ul>
               </div>
           </div> --}}
-      
-
+          @if(!Auth::check())
+          <div class="relative mr-2 hidden lg:mr-4 lg:block">
+            <a href="{{url('/')}}" class="px-3 py-2  text-sm font-medium text-gray-900 focus:outline-none bg-white rounded border border-gray-200 hover:bg-gray-100 hover:text-blue-500 focus:z-10 focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"><i class="fa-solid fa-right-to-bracket pr-1"></i>Login</a>
+          </div>
+          @endif
           <div class="mr-2 lg:mr-0 dropdown relative">
             @if(Auth::check())
               <button type="button"

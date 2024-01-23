@@ -17,7 +17,6 @@
         </div>
        
 
-       
         <div class="w-full mb-5">
             @include('user.dashboard.top_menu')
         </div>
@@ -25,7 +24,7 @@
         <div class="card h-full" id="calendar_pst">
             <div class="card-header flex justify-between space-x-1">
                 <h4 class="card-title">{{$monthName}}</h4>
-                <div class="space-x-1">
+                <div class="space-x-1 whitespace-nowrap">
                     <button type="button" onclick="getMonthData('{{$prevDate}}')" class="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-3 py-2 text-center inline-flex items-center  dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         <i class="fas fa-arrow-left "></i>  
                     </button>

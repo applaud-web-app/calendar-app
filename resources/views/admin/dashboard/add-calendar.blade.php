@@ -1,6 +1,7 @@
 @extends('layout.master')
 @section('section')
-    <section class="relative content-body">
+<section class="content-body flex items-center ">
+
         <div class="container mx-auto ">
 
             <div>

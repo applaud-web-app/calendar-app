@@ -14,7 +14,7 @@
         <div>
             @include('messages')
         </div>
-
+ 
 
         @forelse ($calendarData as $item)
         @if(count($item->calendars))
@@ -23,7 +23,7 @@
                 {{$item->category_name}}
                 </h5>
                 <hr>
-                    <ul class="my-4 md:gap-3 gap-2 grid  lg:grid-cols-2 grid-cols-1">
+                <ul class="my-4 md:gap-3 gap-2 grid  lg:grid-cols-2 grid-cols-1">
                         @foreach ($item->calendars as $item)
                             @php
                                 $inputObj = new stdClass();
@@ -32,7 +32,7 @@
                                 $encLink = Common::encryptLink($inputObj);
                             @endphp
                             <li>
-                                <a href="{{$encLink}}" class="flex items-center justify-between md:p-3 p-2 shadow-sm md:text-lg text-base  text-gray-900 rounded-sm  bg-white hover:bg-blue-100 group dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                                <a href="{{$encLink}}" class="lex items-center justify-between md:p-3 p-2 shadow-sm md:text-lg text-base  text-gray-900 rounded-sm  bg-white hover:bg-blue-100 group dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                                     <span class="flex-1 whitespace-nowrap">{{$item->calendar_name}}</span>
                                     <button type="button" class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full  md:p-2 p-1 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500">
                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -47,7 +47,7 @@
         @endif
         @empty
             <div class="w-full mb-3 ">
-                <h2 class="text-center">NO DATA</h2>
+                <h3 class="text-center">NO DATA</h3>
             </div>
         @endforelse
        

@@ -53,6 +53,8 @@
             
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
+                height: 'auto',
+                fixedWeekCount: false,
                 initialView: "multiMonthYear",
                 events: function (fetchInfo, successCallback, failureCallback) {
                 jQuery.ajax({
