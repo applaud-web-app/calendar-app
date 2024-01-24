@@ -11,10 +11,7 @@
           
         </div>
 
-        {{--  --}}
        
-
-        {{--  --}}
         <div class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md text-slate-500">
             <h5 class="text-lg text-gray-900 mb-3">Overview :</h5>
             <p class="mb-3">This policy sets out how The School of Dental Nursing (‘the School’) uses and protects any information that you give to the School. The School is committed to safeguarding the personal information you give to us and to protect your privacy. By submitting your personal information via our website: schoolofdentalnursing.com you are confirming that you have read and understood how we may use the personal information that you have provided .</p>
