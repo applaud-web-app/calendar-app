@@ -66,4 +66,31 @@ class AuthController extends Controller
         Auth::logout();
         return redirect('/');
     }
+
+    public function forgetPassword(){
+        return view("index.forget-password");
+    }
+
+    public function sendResetLink(Request $request){
+        $request->validate([
+            'email'=>'required|email'
+        ]);
+        $checkEmail = User::where(['email'=>$request->email,'u_status'=>1])->where('u_type','!=',1)->first();
+        
+        if(!$checkEmail){
+            return redirect('forget-password')->with('error','Enter registered email account to reset your password');
+        }
+        $token = str_shuffle('abcdefghijklmnopqrstuvwxyz1234567890');
+        $data = [
+            'email'=>$request->email,
+            'token'=>$token,
+            'user'=>$checkEmail
+        ];
+        \Mail::send('index.send-reset-link', $data, function($message) use($data) {
+            $message->to($data['email'], 'CalendarApp')->subject
+                ('Password Reset Link - '.date("d M Y h:i A"));
+        });
+        return redirect('forget-password')->with('success','Password reset link sent your email successfully...');
+    }
+    
 }

@@ -22,6 +22,8 @@ Route::post('/check-login',[AuthController::class,'checkLogin'])->name('check-lo
 Route::get('/register',[AuthController::class,'register'])->name('register');
 Route::post('/register',[AuthController::class,'storeRegister'])->name('store-register');
 Route::get('/logout',[AuthController::class,'logout'])->name('logout')->middleware('auth');
+Route::get('/forget-password',[AuthController::class,'forgetPassword']);
+Route::post('/send-reset-link',[AuthController::class,'sendResetLink']);
 
 Route::group(['prefix'=>'admin','middleware'=>['auth','checkAdmin']],function(){
     Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');

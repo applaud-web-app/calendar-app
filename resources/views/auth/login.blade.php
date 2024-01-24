@@ -33,7 +33,7 @@
                         <span class="text-sm text-slate-500 font-medium">Remember me</span>                             
                     </label>
                 </div>
-                <a href="#" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forget Password?</a>
+                <a href="{{url('forget-password')}}" class="ms-auto text-sm text-blue-700 hover:underline dark:text-blue-500">Forget Password?</a>
             </div>
 
                             
