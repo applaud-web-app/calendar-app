@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PasswordResetToken;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Hash;
@@ -59,6 +60,9 @@ class AuthController extends Controller
         $userObj->u_status = 1;
         $userObj->u_type = 2;
         $userObj->save();
+        if(Auth::check()){
+            return redirect('admin/all-users')->with('success','Account created successfully..');
+        }
         return redirect('/')->with('success','Account created successfully..Login to continue');
     }
 
@@ -86,6 +90,14 @@ class AuthController extends Controller
             'token'=>$token,
             'user'=>$checkEmail
         ];
+
+        PasswordResetToken::where(['email'=>$request->email])->delete();
+
+        PasswordResetToken::insert([
+            'email'=>$request->email,
+            'token'=>$token
+        ]);
+
         \Mail::send('index.send-reset-link', $data, function($message) use($data) {
             $message->to($data['email'], 'CalendarApp')->subject
                 ('Password Reset Link - '.date("d M Y h:i A"));
@@ -93,4 +105,29 @@ class AuthController extends Controller
         return redirect('forget-password')->with('success','Password reset link sent your email successfully...');
     }
     
+    public function resetPassword(Request $request){
+        $email = $request->email;
+        $token = $request->token;
+        $checkValid = PasswordResetToken::where(['email'=>$email,'token'=>$token])->first();
+        if(!$checkValid){
+            return redirect('forget-password')->with('error','Invalid link or link expired...');
+        }
+        return view('index.reset-password');
+    }
+
+    public function storeResetPassword(Request $request){
+        $request->validate([
+            'password'=>'required'
+        ]);
+        $email = $request->email;
+        $token = $request->token;
+        $checkValid = PasswordResetToken::where(['email'=>$email,'token'=>$token])->first();
+        if(!$checkValid){
+            return redirect('forget-password')->with('error','Invalid link or link expired...');
+        }
+        PasswordResetToken::where('email',$checkValid->email)->delete();
+        User::where('email',$email)->update(['password'=>Hash::make($request->password)]);
+        return redirect('/')->with('success','Password changed successfully..Login to continue');
+
+    }
 }

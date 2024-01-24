@@ -176,8 +176,8 @@
                     <input type="text" class="form-control" id="event_title" name="event_title" placeholder="Enter Event" required>
                 </div>
                 <div class="form-group mb-3">
-                    <label for="event_time" class="label">Time <span class="text-red-500">*</span></label>
-                    <input type="time" class="form-control" id="event_time" name="event_time" placeholder="Enter Time" required>
+                    <label for="event_time" class="label">Time</label>
+                    <input type="time" class="form-control" id="event_time" name="event_time" placeholder="Enter Time">
                 </div>
 
                 <div class="form-group mb-3">
@@ -336,8 +336,8 @@
                                 <input type="text" class="form-control" id="event_title_up" name="event_title" placeholder="Enter Event" required value="${data.event_title}">
                             </div>
                             <div class="form-group mb-3">
-                                <label for="event_time_up" class="label">Time <span class="text-red-500">*</span></label>
-                                <input type="time" class="form-control" id="event_time_up" name="event_time" placeholder="Enter Time" value="${data.event_time}" required>
+                                <label for="event_time_up" class="label">Time</label>
+                                <input type="time" class="form-control" id="event_time_up" name="event_time" placeholder="Enter Time" value="${data.event_time}">
                             </div>
 
                             <div class="form-group mb-3">

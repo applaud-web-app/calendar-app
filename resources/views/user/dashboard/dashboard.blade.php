@@ -50,6 +50,12 @@
                 <h3 class="text-center">NO DATA</h3>
             </div>
         @endforelse
+
+        <div class="w-full">
+           
+        {{ $calendarData->links() }}
+        
+        </div>
        
        
 

@@ -71,4 +71,7 @@ class IndexController extends Controller
         ]);
         return redirect('my-profile')->with('success','Password updated successfully...');
     }
+
+   
+
 }

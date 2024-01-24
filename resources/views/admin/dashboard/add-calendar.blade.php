@@ -28,8 +28,8 @@
                                     <label for="category" class="label">Category <span
                                             class="text-red-500">*</span></label>
                                     <select id="category" name="category" class="form-select form-control"
-                                        aria-label="Default select example">
-                                        <option>--Select Category-</option>
+                                        aria-label="Default select example" required>
+                                        <option value="">--Select Category-</option>
                                         @foreach (Common::allCategories() as $item)
                                             <option value="{{$item->id}}">{{$item->category_name}}</option>
                                         @endforeach

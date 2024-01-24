@@ -55,6 +55,9 @@ class Common
   }
 
   public static function timeFormatGl($time){
+    if(is_null($time)){
+      return '';
+    }
      $today = date("Y-m-d");
      return date("h:i A",strtotime($today.' '.$time));
   }

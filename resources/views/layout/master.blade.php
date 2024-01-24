@@ -35,40 +35,31 @@
           </a>
         </div>
 
+        @if(Auth::check()==true && Auth::user()->u_type==1)
         <div class="order-2 hidden w-full items-center justify-between md:order-1 md:ml-5 md:flex md:w-auto"
           id="mobile-menu-2">
           <ul
             class="font-body mt-4 flex flex-col font-medium md:mt-0 md:flex-row md:text-sm md:font-medium space-x-0 md:space-x-4 lg:space-x-6 navbar">
+           
             <li>
-              <a href="#"
-                class="text-slate-300 flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
-                <i class="ti ti-smart-home mr-1 pb-1 text-lg"></i> Home
-              </a>
-            </li>
-            <li>
-              <a href="#"
+              <a href="{{url('admin/all-categories')}}"
                 class="text-slate-300 flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
                 <i class="ti ti-smart-home mr-1 pb-1 text-lg"></i> Category
 
               </a>
             </li>
             <li>
-              <a href="#"
+              <a href="{{url('admin/all-users')}}"
                 class="text-slate-300 flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
-                <i class="ti ti-smart-home mr-1 pb-1 text-lg"></i> Users
-
+                <i class="ti ti-users mr-1 pb-1 text-lg"></i> Users
               </a>
             </li>
-            <li>
-              <a href="#"
-                class="text-slate-300 flex w-full items-center border-b border-gray-800 py-2 px-3 font-medium md:border-0 md:p-0">
-                <i class="ti ti-smart-home mr-1 pb-1 text-lg"></i> Contact
-
-              </a>
-            </li>
+           
 
           </ul>
         </div>
+        @endif
+
         <div class="order-1 ml-auto flex items-center md:order-2">
 
           @if(!Auth::check())

@@ -35,16 +35,23 @@
                                 $inputObj->params = 'id='.$item->id;
                                 $inputObj->url = url('admin/monthly-calendar');
                                 $encLink = Common::encryptLink($inputObj);
+
+                                $inputObjE = new stdClass();
+                                $inputObjE->params = 'id='.$item->id;
+                                $inputObjE->url = url('admin/edit-calendar');
+                                $encLinkE = Common::encryptLink($inputObjE);
                             @endphp
                             <li>
                                 <a href="{{$encLink}}" class="flex items-center justify-between md:p-3 p-2 shadow-sm md:text-lg text-base  text-gray-900 rounded-sm  bg-white hover:bg-blue-100 group dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                                     <span class="flex-1 whitespace-nowrap">{{$item->calendar_name}}</span>
+                                    
                                     <button type="button" class="text-blue-700 border border-blue-700 hover:bg-blue-700 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full  md:p-2 p-1 text-center inline-flex items-center dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800 dark:hover:bg-blue-500">
                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
                                         </svg>
                                     </button>
                                 </a>
+                                <a href="{{$encLinkE}}" class="text-blue-500">Edit Details</a>
                             </li>
                         @endforeach
                     </ul>
@@ -55,6 +62,12 @@
                 <h3 class="text-center">NO DATA</h3>
             </div>
         @endforelse
+
+        <div class="w-full">
+           
+                {{ $calendarData->links() }}
+           
+        </div>
        
        
 

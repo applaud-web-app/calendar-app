@@ -25,7 +25,7 @@ class DashboardController extends Controller
         $catObj->status = 1;
         $catObj->save();
         \Cache::forget('ACTIVE_CATEGORIES');
-        return redirect('admin/dashboard')->with('success','Category added successfully...');
+        return redirect()->back()->with('success','Category added successfully...');
     }
 
     public function addCalendar(){
@@ -73,7 +73,7 @@ class DashboardController extends Controller
         $eventObj->color_code = $request->json('color_code');
         $eventObj->event_date = $request->json('event_date');
         $eventObj->event_title = $request->json('event_title');
-        $eventObj->event_time = $request->json('event_time');
+        $eventObj->event_time = !empty($request->json('event_time')) ? $request->json('event_time') : null;
         $eventObj->calendar_id = $calendarId;
         $eventObj->save();
         return response()->json(['s'=>1]);
@@ -96,7 +96,7 @@ class DashboardController extends Controller
         $eventObj->color_code = $request->json('color_code');
         $eventObj->event_date = $request->json('event_date');
         $eventObj->event_title = $request->json('event_title');
-        $eventObj->event_time = $request->json('event_time');
+        $eventObj->event_time = !empty($request->json('event_time')) ? $request->json('event_time') : null;
         $eventObj->save();
         return response()->json(['s'=>1]);
     }

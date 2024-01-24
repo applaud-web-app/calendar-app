@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\IndexController;
@@ -24,6 +25,7 @@ Route::post('/register',[AuthController::class,'storeRegister'])->name('store-re
 Route::get('/logout',[AuthController::class,'logout'])->name('logout')->middleware('auth');
 Route::get('/forget-password',[AuthController::class,'forgetPassword']);
 Route::post('/send-reset-link',[AuthController::class,'sendResetLink']);
+Route::post('/store-reset-password',[AuthController::class,'storeResetPassword']);
 
 Route::group(['prefix'=>'admin','middleware'=>['auth','checkAdmin']],function(){
     Route::get('/dashboard',[DashboardController::class,'dashboard'])->name('dashboard');
@@ -40,6 +42,14 @@ Route::group(['prefix'=>'admin','middleware'=>['auth','checkAdmin']],function(){
     Route::any('/yearly-calendar',[DashboardController::class,'yearlyCalendar'])->name('yearly-calendar');
     Route::get('/enquiries',[DashboardController::class,'enquiries'])->name('enquiries');
     Route::get('/remove-enquiry',[DashboardController::class,'removeEnquiry'])->name('remove-enquiry');
+    Route::get('/all-categories',[CategoryController::class,'allCategories']);
+    Route::post('/update-category',[CategoryController::class,'updateCategory']);
+    Route::get('/remove-category',[CategoryController::class,'removeCategory']);
+    Route::get('/all-users',[CategoryController::class,'allUsers']);
+    Route::get('/add-user',[CategoryController::class,'addUser']);
+    Route::get('/remove-user',[CategoryController::class,'removeUser']);
+    Route::get('/edit-calendar',[CategoryController::class,'editCalendar']);
+    Route::post('/update-calendar',[CategoryController::class,'updateCalendar']);
 });
 
 Route::group(['prefix'=>'user','middleware'=>['auth']],function(){
@@ -56,6 +66,7 @@ Route::get('privacy-policy',[IndexController::class,'privacyPolicy']);
 Route::get('terms-and-condition',[IndexController::class,'termsAndCondition']);
 Route::get('contact-us',[IndexController::class,'contactUs']);
 Route::post('store-contact',[IndexController::class,'storeContact']);
+Route::get('reset-password',[AuthController::class,'resetPassword']);
 
 Route::group(['middleware'=>['auth']],function(){
 Route::get('my-profile',[IndexController::class,'myProfile']);

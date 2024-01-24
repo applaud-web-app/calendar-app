@@ -70,6 +70,13 @@
                     </table>
                 </div>                            
             </div><!--end card-body-->
+
+            <div class="w-full mt-3">
+           
+                {{ $enquiries->links() }}
+           
+        </div>
+
         </div>
 
     </div>
