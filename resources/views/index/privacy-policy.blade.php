@@ -11,6 +11,125 @@
           
         </div>
 
+        {{--  --}}
+        <div class="h-full card w-full relative overflow-hidden mb-3">
+            <div class="card-header">
+                <h4 class="font-medium">All Users</h4>
+            </div>
+            <div class="flex flex-col  card-body p-1">
+                <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                    <div class="inline-block py-2 min-w-full sm:px-6 lg:px-8">
+                        <div class="overflow-hidden">
+                            <table class="min-w-full">
+                                <thead class="bg-gray-50 dark:bg-gray-700">
+                                    <tr>
+                                        <th scope="col" class="w-10 p-3 text-sm font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">#</th>
+                                        <th scope="col" class="p-3 text-sm font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                            Name
+                                        </th>
+                                        <th scope="col" class="p-3 text-sm font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                            Email
+                                        </th>
+                                        <th scope="col" class="p-3 text-sm font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                            Sell
+                                        </th>
+                                        <th scope="col" class="p-3 text-sm font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                            Status
+                                        </th>
+                                        <th scope="col" class="p-3 text-sm font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400">
+                                            Action
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- 1 -->
+                                    <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                        <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
+                                        <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                           T-Wind Camera EDM 5D(White)
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            $50 <del class="text-gray-400">$90</del>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            450<small class="text-gray-400">(500)</small>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <span class="focus:outline-none text-[12px] bg-green-100 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2">Actice</span>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <a href="#"><i class="ti ti-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                            <a href="#"><i class="ti ti-trash text-lg text-red-500 dark:text-red-400"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                        <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
+                                        <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                           T-Wind Camera EDM 5D(White)
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            $50 <del class="text-gray-400">$90</del>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            450<small class="text-gray-400">(500)</small>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <span class="focus:outline-none text-[12px] bg-green-100 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2">Actice</span>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <a href="#"><i class="ti ti-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                            <a href="#"><i class="ti ti-trash text-lg text-red-500 dark:text-red-400"></i></a>
+                                        </td>
+                                    </tr>
+                                    <!-- 3 -->
+                                    <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                        <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
+                                        <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                            <img src="assets/images/products/03.png" alt="" class="mr-2 h-5 inline-block">T-Wind VR 5D (Black)
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            $39 <del class="text-gray-400">$99</del>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            700<small class="text-gray-400">(700)</small>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <span class="focus:outline-none text-[12px] bg-red-100 text-red-700 dark:text-red-600 rounded font-medium py-1 px-2">Incative</span>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <a href="#"><i class="ti ti-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                            <a href="#"><i class="ti ti-trash text-lg text-red-500 dark:text-red-400"></i></a>
+                                        </td>
+                                    </tr>
+                                    <!-- 4 -->
+                                    <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
+                                        <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
+                                        <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
+                                           T-Wind Camera EDM 5D(White)
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            $50 <del class="text-gray-400">$90</del>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            450<small class="text-gray-400">(500)</small>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <span class="focus:outline-none text-[12px] bg-green-100 text-green-700 dark:text-green-600 rounded font-medium py-1 px-2">Actice</span>
+                                        </td>
+                                        <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
+                                            <a href="#"><i class="ti ti-edit text-lg text-gray-500 dark:text-gray-400"></i></a>
+                                            <a href="#"><i class="ti ti-trash text-lg text-red-500 dark:text-red-400"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{--  --}}
         <div class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md text-slate-500">
             <h5 class="text-lg text-gray-900 mb-3">Overview :</h5>
             <p class="mb-3">This policy sets out how The School of Dental Nursing (‘the School’) uses and protects any information that you give to the School. The School is committed to safeguarding the personal information you give to us and to protect your privacy. By submitting your personal information via our website: schoolofdentalnursing.com you are confirming that you have read and understood how we may use the personal information that you have provided .</p>
