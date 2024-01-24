@@ -65,9 +65,7 @@
                                     <td colspan="4" class="text-center"><h4 class="text-red-500">NO Enquiries</h4></td>
                                 </tr>
                             @endforelse
-                           
-                          
-                         
+
                         </tbody>
                     </table>
                 </div>                            
@@ -76,8 +74,6 @@
 
     </div>
 </section>
-
-
 
 @endsection
 
