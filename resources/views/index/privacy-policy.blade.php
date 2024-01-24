@@ -53,11 +53,11 @@
 
 
 <h5 class="text-lg text-gray-900 mb-3">5. Sharing Information with external bodies and organisations</h5>
-<p>We may share specific parts of the student information which we hold with our external partners such as awarding or regulatory bodies. The reasons we do this are as follows: - To manage our relationship with external organisations/bodies in order to meet our regulatory obligations – To allow a partner awarding organisation/body to check if a student application meets eligibility criteria and indicates suitability for the course applied for. The School collects special categories of personal data such as nationality, ethnic origin, religious belief, sexual orientation, disabilities, and criminal convictions. This is done during the recruitment process and applicants are asked to give their consent at this stage. This category of data is collected to meet the statistical requirements of external organisations and stakeholders and the original consent implies acceptance of such disclosure.</p>
+<p class="mb-3">We may share specific parts of the student information which we hold with our external partners such as awarding or regulatory bodies. The reasons we do this are as follows: - To manage our relationship with external organisations/bodies in order to meet our regulatory obligations – To allow a partner awarding organisation/body to check if a student application meets eligibility criteria and indicates suitability for the course applied for. The School collects special categories of personal data such as nationality, ethnic origin, religious belief, sexual orientation, disabilities, and criminal convictions. This is done during the recruitment process and applicants are asked to give their consent at this stage. This category of data is collected to meet the statistical requirements of external organisations and stakeholders and the original consent implies acceptance of such disclosure.</p>
 
 
 <h5 class="text-lg text-gray-900 mb-3">6. Third party data processors</h5>
-<p>We use a number of third parties to collect and process personal data on our behalf. These third parties have been carefully chosen and all of them comply with data regulations <br>
+<p class="mb-3">We use a number of third parties to collect and process personal data on our behalf. These third parties have been carefully chosen and all of them comply with data regulations <br>
 The third party data processors we use are: <br>
 •	Google (Privacy Policy) <br>
 •	Mailchimp (Privacy Policy) <br>
@@ -96,9 +96,6 @@ The third party data processors we use are: <br>
 <h5 class="text-lg text-gray-900 mb-3">11. Privacy policy changes</h5>
 <p class="mb-3">If our privacy policy changes significantly, we will contact you by email and advise you what has changed. This email will contain an unsubscribe link like all our other email correspondence giving you the option to opt out.
 </p>
-
-
-
 
             
 
