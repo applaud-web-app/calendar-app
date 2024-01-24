@@ -46,7 +46,7 @@
                                     <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
                                         <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
                                         <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
-                                           T-Wind Camera EDM 5D(White)
+                                           Himanshu Verma
                                         </td>
                                         <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
                                             $50 <del class="text-gray-400">$90</del>
@@ -65,7 +65,7 @@
                                     <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
                                         <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
                                         <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
-                                           T-Wind Camera EDM 5D(White)
+                                           Himanshu Verma
                                         </td>
                                         <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
                                             $50 <del class="text-gray-400">$90</del>
@@ -85,7 +85,7 @@
                                     <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
                                         <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
                                         <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
-                                            <img src="assets/images/products/03.png" alt="" class="mr-2 h-5 inline-block">T-Wind VR 5D (Black)
+                                            Himanshu Verma
                                         </td>
                                         <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
                                             $39 <del class="text-gray-400">$99</del>
@@ -105,7 +105,7 @@
                                     <tr class="bg-white border-b border-dashed dark:bg-gray-800 dark:border-gray-700">
                                         <td class="w-10 p-3 text-sm font-medium whitespace-nowrap dark:text-white">1</td>
                                         <td class="p-3 text-sm font-medium whitespace-nowrap dark:text-white">
-                                           T-Wind Camera EDM 5D(White)
+                                           Himanshu Verma
                                         </td>
                                         <td class="p-3 text-sm text-gray-500 whitespace-nowrap dark:text-gray-400">
                                             $50 <del class="text-gray-400">$90</del>
