@@ -59,7 +59,7 @@ class Common
       return '';
     }
      $today = date("Y-m-d");
-     return '<i class="fa-solid fa-clock"></i>'. date("h:i A",strtotime($today.' '.$time));
+     return '<i class="fa-solid fa-clock"></i> '. date("h:i A",strtotime($today.' '.$time));
   }
 
 }
