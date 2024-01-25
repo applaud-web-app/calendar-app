@@ -55,7 +55,7 @@
                                             @foreach ($dateEvents[$item->date] as $val)
                                                 <tr class="border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top" style="background: {!!$val->color_code!!};">
                                                     <td class="px-3 py-4 whitespace-nowrap">
-                                                        {{$item->format_date}}
+                                                        <b class="border-r-2 block w-14 border-gray-800">{{$item->format_date}}</b>
                                                     </td>
                                                     <td scope="row" class="px-3 py-4 w-full font-medium text-gray-900 dark:text-white ">
 
@@ -72,7 +72,7 @@
                                         @else
                                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top">
                                                 <td class="px-3 py-4 whitespace-nowrap">
-                                                    {{$item->format_date}}
+                                                    <b class="border-r-2 block w-14 border-gray-800">{{$item->format_date}}</b>
                                                 </td>
                                                 <td scope="row" class="px-3 py-4 w-full font-medium text-gray-900 dark:text-white ">
 
@@ -114,7 +114,7 @@
                                         @foreach ($dateEvents[$item->date] as $val)
                                             <tr class="bg-blue-200 border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top">
                                                <td class="px-3 py-4 whitespace-nowrap">
-                                                    {{$item->format_date}}
+                                                    <b class="border-r-2 block w-14 border-gray-800">{{$item->format_date}}</b>
                                                 </td>
                                                 <td scope="row" class="px-3 py-4 w-full font-medium text-gray-900 dark:text-white ">
 
@@ -131,7 +131,7 @@
                                     @else
                                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top">
                                            <td class="px-3 py-4 whitespace-nowrap">
-                                                {{$item->format_date}}
+                                                <b class="border-r-2 block w-14 border-gray-800">{{$item->format_date}}</b>
                                             </td>
                                             <td scope="row" class="px-3 py-4 w-full font-medium text-gray-900 dark:text-white ">
 
@@ -176,7 +176,7 @@
                                             @foreach ($dateEvents[$item->date] as $val)
                                                 <tr class="bg-blue-200 border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top">
                                                     <td class="px-3 py-4 ">
-                                                        {{$item->format_date}}
+                                                        <b class="border-r-2 block w-14 border-gray-800">{{$item->format_date}}</b>
                                                     </td>
                                                     <td scope="row" class="px-3 py-4 w-full font-medium text-gray-900 dark:text-white ">
 
@@ -193,7 +193,7 @@
                                         @else
                                             <tr class="bg-white border-b dark:bg-gray-800 dark:border-slate-700  border-gray-400 dark:hover:bg-slate-900/20 align-top">
                                                <td class="px-3 py-4 whitespace-nowrap">
-                                                    {{$item->format_date}}
+                                                    <b class="border-r-2 block w-14 border-gray-800">{{$item->format_date}}</b>
                                                 </td>
                                                 <td scope="row" class="px-3 py-4 w-full font-medium text-gray-900 dark:text-white ">
 
