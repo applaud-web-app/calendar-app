@@ -151,22 +151,22 @@
     <div class="container mx-auto p-3">
       <div class="sm:flex sm:items-center sm:justify-between ">
         <div class="flex my-1 justify-center sm:mt-0 space-x-3">
-          <a href="#"
+          <a href="https://www.facebook.com/schoolofdentalnursing"
             class="h-8 w-8 text-center leading-8 bg-white text-blue-500 hover:text-blue-600 border rounded-full border-gray-100 dark:hover:text-white ">
             <i class="fa-brands fa-facebook-f"></i>
 
           </a>
-          <a href="#"
+          <a href="https://www.instagram.com/school.of.dental.nursing/"
             class="h-8 w-8 text-center leading-8 bg-white text-blue-500 hover:text-blue-600 border rounded-full border-gray-100 dark:hover:text-white ">
             <i class="fa-brands fa-instagram"></i>
 
           </a>
-          <a href="#"
+          <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FDentalNursing_"
             class="h-8 w-8 text-center leading-8 bg-white text-blue-500 hover:text-blue-600 border rounded-full border-gray-100 dark:hover:text-white ">
             <i class="fa-brands fa-twitter"></i>
 
           </a>
-          <a href="#"
+          <a href="https://www.linkedin.com/company/the-school-of-dental-nursing/"
             class="h-8 w-8 text-center leading-8 bg-white text-blue-500 hover:text-blue-600 border rounded-full border-gray-100 dark:hover:text-white ">
             <i class="fa-brands fa-linkedin-in "></i>
 
@@ -190,8 +190,9 @@
       <span class="block text-sm text-white text-center ">©
         <script>
           document.write(new Date().getFullYear());
-        </script> <a href="https://applaudwebmedia.com/" class="hover:underline">Applaud Web Media Pvt. Ltd.</a> All Rights
-        Reserved.
+        </script>
+        The School Of Dental Nursing &nbsp;|&nbsp;  Developed By
+        <a href="https://applaudwebmedia.com/" class="hover:underline">Applaud Web Media Pvt. Ltd.</a>
       </span>
     </div>
 
