@@ -41,7 +41,7 @@
                                             {{$val->event_title}}
                                         </p>
                                         <p class="text-sm text-gray-600 truncate dark:text-gray-400">
-                                            <i class="fa-solid fa-clock"></i> {{Common::timeFormatGl($val->event_time)}}
+                                            {!!Common::timeFormatGl($val->event_time)!!}
                                         </p>
 
                                     </td>
@@ -100,7 +100,7 @@
                                         {{$val->event_title}}
                                     </p>
                                     <p class="text-sm text-gray-600 truncate dark:text-gray-400">
-                                        <i class="fa-solid fa-clock"></i> {{Common::timeFormatGl($val->event_time)}}
+                                        {!!Common::timeFormatGl($val->event_time)!!}
                                     </p>
 
                                 </td>
@@ -162,7 +162,7 @@
                                             {{$val->event_title}}
                                         </p>
                                         <p class="text-sm text-gray-600 truncate dark:text-gray-400">
-                                            <i class="fa-solid fa-clock"></i> {{Common::timeFormatGl($val->event_time)}}
+                                            {!!Common::timeFormatGl($val->event_time)!!}
                                         </p>
 
                                     </td>
