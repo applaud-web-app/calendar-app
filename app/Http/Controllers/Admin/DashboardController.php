@@ -186,7 +186,7 @@ class DashboardController extends Controller
             $dateEvents = [];
             foreach($calendarData as $val){
                 $dateEvents[] = [
-                    'title'=>$val->event_title.' ('.Common::timeFormatGl($val->event_time).')',
+                    'title'=>$val->event_title.Common::timeFormatGlYr($val->event_time),
                     'start'=>$val->event_date,
                     'end'=>$val->event_date,
                 ];

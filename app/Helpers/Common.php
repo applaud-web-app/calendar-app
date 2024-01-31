@@ -62,4 +62,12 @@ class Common
      return '<i class="fa-solid fa-clock"></i> '. date("h:i A",strtotime($today.' '.$time));
   }
 
+  public static function timeFormatGlYr($time){
+    if(is_null($time)){
+      return '';
+    }
+     $today = date("Y-m-d");
+     return ' ('. date("h:i A",strtotime($today.' '.$time)).')';
+  }
+
 }
