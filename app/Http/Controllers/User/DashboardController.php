@@ -62,8 +62,8 @@ class DashboardController extends Controller
         $data['dateEvents'] = $dateEvents;
         $data['calendarId'] = $calendarId;
         $data['monthName'] = date("F Y",strtotime($startDate));
-        $data['prevDate'] = date("Y-m-d",strtotime('-1 month')); 
-        $data['nextDate'] = date("Y-m-d",strtotime("+1 month"));
+        $data['prevDate'] = date("Y-m-d",strtotime('first day of -1 month')); 
+        $data['nextDate'] = date("Y-m-d",strtotime("first day of +1 month"));
         $data['calendarD'] = Calendar::select('calendar_name')->find($calendarId);
         return view('user.dashboard.monthly-calendar',$data);
     }
@@ -116,8 +116,8 @@ class DashboardController extends Controller
         $data['dateEvents'] = $dateEvents;
         $data['calendarId'] = $calendarId;
         $data['monthName'] = date("F Y",strtotime($startDate));
-        $data['prevDate'] = date("Y-m-d",strtotime($date.' -1 month')); 
-        $data['nextDate'] = date("Y-m-d",strtotime($date." +1 month"));
+        $data['prevDate'] = date("Y-m-d",strtotime($date.' first day of -1 month')); 
+        $data['nextDate'] = date("Y-m-d",strtotime($date." first day of +1 month"));
         $data['calendarD'] = Calendar::select('calendar_name')->find($calendarId);
         return view('user.dashboard.monthly-calendar-ajax',$data);
     }
@@ -128,8 +128,8 @@ class DashboardController extends Controller
         $data['calendarD'] = Calendar::select('calendar_name')->find($calendarId);
 
         $firstMonth = date("Y-m-01");
-        $secondMonth = date("Y-m-01",strtotime('+1 months'));
-        $thirdMonth = date("Y-m-01",strtotime('+2 months'));
+        $secondMonth = date("Y-m-01",strtotime('first day of +1 months'));
+        $thirdMonth = date("Y-m-01",strtotime('first day of +2 months'));
         $endDate = date("Y-m-t",strtotime($thirdMonth));
         $calendarData = CalendarEvent::where('calendar_id',$calendarId)->whereBetween('event_date',[$firstMonth,$endDate])->get();
         $dateEvents = [];
@@ -145,8 +145,8 @@ class DashboardController extends Controller
         $data['secondMonthDates'] = Common::getAllDates($secondMonth,date("Y-m-t",strtotime($secondMonth)));
         $data['thirdMonthDates'] = Common::getAllDates($thirdMonth,date("Y-m-t",strtotime($thirdMonth)));
 
-        $data['prevDate'] = date("Y-m-d",strtotime('-3 months'));
-        $data['nextDate'] = date("Y-m-d",strtotime('+3 months'));
+        $data['prevDate'] = date("Y-m-d",strtotime('first day of -3 months'));
+        $data['nextDate'] = date("Y-m-d",strtotime('first day of +3 months'));
         return view('user.dashboard.three-monthly-calendar',$data);
     }
 
@@ -154,8 +154,8 @@ class DashboardController extends Controller
         $date = $request->json('date');
         $calendarId = $this->memberObj['id'];
         $firstMonth = date("Y-m-01",strtotime($date));
-        $secondMonth = date("Y-m-01",strtotime($date.'+1 months'));
-        $thirdMonth = date("Y-m-01",strtotime($date.'+2 months'));
+        $secondMonth = date("Y-m-01",strtotime($date.'first day of +1 months'));
+        $thirdMonth = date("Y-m-01",strtotime($date.'first day of +2 months'));
         $endDate = date("Y-m-t",strtotime($thirdMonth));
         $calendarData = CalendarEvent::where('calendar_id',$calendarId)->whereBetween('event_date',[$firstMonth,$endDate])->get();
         $dateEvents = [];
@@ -171,8 +171,8 @@ class DashboardController extends Controller
         $data['secondMonthDates'] = Common::getAllDates($secondMonth,date("Y-m-t",strtotime($secondMonth)));
         $data['thirdMonthDates'] = Common::getAllDates($thirdMonth,date("Y-m-t",strtotime($thirdMonth)));
 
-        $data['prevDate'] = date("Y-m-d",strtotime($date.'-3 months'));
-        $data['nextDate'] = date("Y-m-d",strtotime($date.'+3 months'));
+        $data['prevDate'] = date("Y-m-d",strtotime($date.'first day of -3 months'));
+        $data['nextDate'] = date("Y-m-d",strtotime($date.'first day of +3 months'));
         return view('user.dashboard.three-monthly-calendar-ajax',$data);
     }
 
